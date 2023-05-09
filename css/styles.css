@@ -7,6 +7,7 @@
   --text-color: #434455;
   --btn-background-color: #f4f4fd;
   --background-wrapper:  #ffffff;
+  --icon-color: #8e8f99;
 }
 
 h1,
@@ -156,13 +157,16 @@ body {
   background-color: var(--background-color);
   padding-top:188px;
   padding-bottom: 188px;
-  margin: auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+ 
+}
+.background {
   max-width: 1440px;
+  margin: 0 auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
-
 
 .main-title {
   margin-left: auto;
@@ -206,7 +210,7 @@ body {
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -338,14 +342,16 @@ body {
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
+  color: var(--icon-color);
 }
 .customer-list-icon{
-  fill: #8E8F99;
+  fill: currentColor;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
   border: 1px solid #404BBF;
+  color: #404bbf;
 }
 
 .customers-list-link:hover .customer-list-icon,
